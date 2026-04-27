@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Azhan Hassan | Data Analyst Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+<style>
+  :root {
+    --bg: #f0f5ff;
+    --surface: #ffffff;
+    --accent: #1a56db;
+    --accent2: #3b82f6;
+    --text: #0f1f4b;
+    --muted: #4a6098;
+    --border: rgba(26,86,219,0.18);
+    --glow: rgba(26,86,219,0.06);
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:var(--bg);
+    color:var(--text);
+    font-family:'DM Sans',sans-serif;
+    overflow-x:hidden;
+    cursor:none;
+  }
+  /* CUSTOM CURSOR */
+  #cursor{
+    position:fixed;width:12px;height:12px;
+    background:var(--accent);border-radius:50%;
+    pointer-events:none;z-index:9999;
+    transform:translate(-50%,-50%);
+    transition:transform 0.1s,width 0.3s,height 0.3s,opacity 0.3s;
+    mix-blend-mode:difference;
+  }
+  #cursor-ring{
+    position:fixed;width:40px;height:40px;
+    border:1px solid var(--accent);border-radius:50%;
+    pointer-events:none;z-index:9998;
+    transform:translate(-50%,-50%);
+    transition:transform 0.15s ease-out,width 0.3s,height 0.3s;
+    opacity:0.5;
+  }
+  /* CANVAS */
+  #bg-canvas{position:fixed;top:0;left:0;width:100%;height:100%;z-index:0;opacity:0.7;}
+
+  /* NAV */
+  nav{
+    position:fixed;top:0;left:0;right:0;z-index:100;
+    display:flex;justify-content:space-between;align-items:center;
+    padding:1.5rem 4rem;
+    backdrop-filter:blur(20px);
+    border-bottom:1px solid var(--border);
+    background:rgba(240,245,255,0.92);
+    transition:all 0.3s;
+  }
+  .nav-logo{
+    font-family:'Playfair Display',serif;
+    font-size:1.1rem;font-weight:700;
+    color:var(--accent);letter-spacing:0.05em;
+  }
+  .nav-links{display:flex;gap:2.5rem;list-style:none;}
+  .nav-links a{
+    color:var(--muted);text-decoration:none;
+    font-size:0.85rem;letter-spacing:0.12em;text-transform:uppercase;
+    transition:color 0.3s;position:relative;
+  }
+  .nav-links a::after{
+    content:'';position:absolute;bottom:-4px;left:0;right:0;
+    height:1px;background:var(--accent);transform:scaleX(0);
+    transition:transform 0.3s;
+  }
+  .nav-links a:hover{color:var(--accent);}
+  .nav-links a:hover::after{transform:scaleX(1);}
+
+  /* SECTIONS */
+  section{
+    position:relative;z-index:1;
+    min-height:100vh;
+    display:flex;align-items:center;
+    padding:8rem 4rem 4rem;
+  }
+
+  /* HERO */
+  #hero{
+    justify-content:center;
+    align-items:flex-start;
+    flex-direction:row;
+    text-align:left;
+    padding-left:min(10vw,10rem);
+    padding-right:0;
+    overflow:hidden;
+  }
+  #hero::before{
+    content:'AH';
+    position:absolute;
+    right:-0.05em;
+    top:50%;
+    transform:translateY(-50%);
+    font-family:'Playfair Display',serif;
+    font-size:clamp(18rem,35vw,38rem);
+    font-weight:900;
+    color:transparent;
+    -webkit-text-stroke:1px rgba(26,86,219,0.12);
+    line-height:1;
+    pointer-events:none;
+    user-select:none;
+    z-index:0;
+  }
+  .hero-content{
+    position:relative;
+    z-index:2;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    max-width:55%;
+    padding-top:2rem;
+    padding-bottom:2rem;
+    align-self:center;
+  }
+  .hero-eyebrow{
+    font-size:0.8rem;letter-spacing:0.3em;text-transform:uppercase;
+    color:var(--accent);margin-bottom:1.5rem;
+    display:flex;align-items:center;gap:1rem;
+    opacity:0;animation:fadeUp 0.8s 0.2s forwards;
+  }
+  .hero-eyebrow::before{content:'';flex:0 0 40px;height:1px;background:var(--accent);}
+  .hero-title{
+    font-family:'Playfair Display',serif;
+    font-size:clamp(4.5rem,10vw,9rem);
+    font-weight:900;line-height:1.0;
+    color:var(--text);margin-bottom:1.5rem;
+    opacity:0;animation:fadeUp 0.8s 0.4s forwards;
+    letter-spacing:-0.02em;
+  }
+  .hero-title span{color:var(--accent);}
+  .hero-subtitle{
+    font-size:clamp(1.05rem,1.8vw,1.5rem);
+    color:var(--muted);max-width:600px;
+    line-height:1.8;margin-bottom:3rem;
+    opacity:0;animation:fadeUp 0.8s 0.6s forwards;
+    font-weight:300;
+  }
+  .hero-cta{
+    display:flex;gap:1.5rem;flex-wrap:wrap;
+    opacity:0;animation:fadeUp 0.8s 0.8s forwards;
+  }
+  .btn-primary{
+    padding:0.9rem 2.5rem;
+    background:var(--accent);color:#ffffff;
+    border:none;font-family:'DM Sans',sans-serif;
+    font-size:0.85rem;font-weight:500;letter-spacing:0.12em;
+    text-transform:uppercase;text-decoration:none;
+    cursor:none;transition:all 0.3s;
+    clip-path:polygon(0 0,calc(100% - 12px) 0,100% 12px,100% 100%,0 100%);
+  }
+  .btn-primary:hover{background:var(--accent2);transform:translateY(-2px);}
+  .btn-outline{
+    padding:0.9rem 2.5rem;
+    background:transparent;color:var(--accent);
+    border:1px solid var(--border);
+    font-family:'DM Sans',sans-serif;
+    font-size:0.85rem;font-weight:500;letter-spacing:0.12em;
+    text-transform:uppercase;text-decoration:none;
+    cursor:none;transition:all 0.3s;
+  }
+  .btn-outline:hover{border-color:var(--accent);background:var(--glow);}
+  .hero-scroll{
+    position:absolute;bottom:2.5rem;left:min(10vw,10rem);
+    display:flex;flex-direction:column;align-items:center;gap:0.5rem;
+    color:var(--muted);font-size:0.7rem;letter-spacing:0.2em;text-transform:uppercase;
+    opacity:0;animation:fadeIn 1s 1.2s forwards;
+    z-index:2;
+  }
+  .scroll-line{width:1px;height:50px;background:linear-gradient(to bottom,var(--accent),rgba(26,86,219,0));}
+
+  /* HERO WAVE */
+  .hero-wave{
+    position:absolute;
+    top:0;right:0;bottom:0;
+    width:58%;
+    pointer-events:none;
+    z-index:1;
+    overflow:hidden;
+  }
+  .hero-wave svg{ width:100%; height:100%; }
+  .hero-stats{
+    display:flex;flex-direction:row;gap:3rem;
+    opacity:0;animation:fadeUp 0.8s 1s forwards;
+    margin-top:3.5rem;
+    padding-top:2.5rem;
+    border-top:1px solid var(--border);
+    max-width:550px;
+  }
+  .stat-item{text-align:left;}
+  .stat-num{
+    font-family:'Playfair Display',serif;
+    font-size:2.8rem;font-weight:900;color:var(--accent);
+    line-height:1;
+  }
+  .stat-label{font-size:0.7rem;color:var(--muted);letter-spacing:0.1em;text-transform:uppercase;margin-top:0.3rem;}
+
+  /* SECTION TITLE */
+  .sec-title{
+    font-family:'Playfair Display',serif;
+    font-size:clamp(2rem,4vw,3.5rem);
+    font-weight:700;color:var(--text);
+    margin-bottom:0.5rem;
+  }
+  .sec-title span{color:var(--accent);}
+  .sec-line{
+    width:60px;height:2px;background:var(--accent);
+    margin-bottom:3rem;
+  }
+  .sec-eyebrow{
+    font-size:0.75rem;letter-spacing:0.3em;text-transform:uppercase;
+    color:var(--accent);margin-bottom:1rem;
+    display:flex;align-items:center;gap:1rem;
+  }
+  .sec-eyebrow::before{content:'';flex:0 0 30px;height:1px;background:var(--accent);}
+
+  /* ABOUT */
+  #about .container{
+    display:grid;grid-template-columns:1fr 1fr;gap:6rem;
+    align-items:center;max-width:1200px;margin:auto;width:100%;
+  }
+  .about-text p{
+    color:var(--muted);line-height:1.9;margin-bottom:1.5rem;
+    font-size:1rem;font-weight:300;
+  }
+  .about-text p strong{color:var(--accent);font-weight:500;}
+  .about-info{
+    display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-top:2.5rem;
+  }
+  .info-item label{
+    font-size:0.7rem;color:var(--muted);letter-spacing:0.15em;
+    text-transform:uppercase;display:block;margin-bottom:0.3rem;
+  }
+  .info-item span{color:var(--text);font-size:0.9rem;}
+
+  /* SKILLS 3D GRID */
+  #skills .container{max-width:1200px;margin:auto;width:100%;}
+  .skills-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(160px,1fr));
+    gap:1rem;margin-top:0;
+  }
+  .skill-card{
+    background:var(--surface);
+    border:1px solid var(--border);
+    padding:1.5rem 1.2rem;
+    position:relative;overflow:hidden;
+    transition:all 0.4s;
+    transform-style:preserve-3d;
+    cursor:none;
+  }
+  .skill-card::before{
+    content:'';position:absolute;inset:0;
+    background:linear-gradient(135deg,var(--glow),transparent);
+    opacity:0;transition:opacity 0.4s;
+  }
+  .skill-card:hover{
+    transform:translateY(-8px) rotateX(5deg) rotateY(-3deg);
+    border-color:var(--accent);
+    box-shadow:0 20px 60px rgba(59,130,246,0.1),0 0 0 1px rgba(59,130,246,0.2);
+  }
+  .skill-card:hover::before{opacity:1;}
+  .skill-icon{font-size:1.8rem;margin-bottom:0.8rem;}
+  .skill-name{font-size:0.8rem;font-weight:500;color:var(--text);letter-spacing:0.05em;}
+  .skill-level{
+    margin-top:0.8rem;height:2px;
+    background:rgba(255,255,255,0.05);
+    border-radius:1px;overflow:hidden;
+  }
+  .skill-bar{height:100%;background:var(--accent);transition:width 1.5s ease;}
+
+  /* EXPERIENCE TIMELINE */
+  #experience .container{max-width:900px;margin:auto;width:100%;}
+  .timeline{position:relative;padding-left:2rem;}
+  .timeline::before{
+    content:'';position:absolute;left:0;top:0;bottom:0;
+    width:1px;background:linear-gradient(to bottom,var(--accent),rgba(26,86,219,0));
+  }
+  .timeline-item{
+    position:relative;margin-bottom:3.5rem;
+    padding-left:2.5rem;
+    opacity:0;transform:translateX(-20px);
+    transition:all 0.6s;
+  }
+  .timeline-item.visible{opacity:1;transform:translateX(0);}
+  .timeline-dot{
+    position:absolute;left:-2.5rem;top:0.4rem;
+    width:10px;height:10px;border-radius:50%;
+    background:var(--accent);
+    box-shadow:0 0 20px var(--accent);
+  }
+  .timeline-date{
+    font-size:0.75rem;color:var(--accent);
+    letter-spacing:0.15em;text-transform:uppercase;margin-bottom:0.5rem;
+  }
+  .timeline-role{
+    font-family:'Playfair Display',serif;
+    font-size:1.3rem;color:var(--text);margin-bottom:0.25rem;
+  }
+  .timeline-company{
+    font-size:0.85rem;color:var(--muted);margin-bottom:1rem;
+    letter-spacing:0.05em;
+  }
+  .timeline-desc{
+    color:var(--muted);font-size:0.9rem;line-height:1.8;
+    font-weight:300;
+  }
+  .timeline-tags{display:flex;flex-wrap:wrap;gap:0.5rem;margin-top:1rem;}
+  .tag{
+    padding:0.25rem 0.75rem;
+    border:1px solid var(--border);
+    font-size:0.7rem;color:var(--muted);
+    letter-spacing:0.1em;text-transform:uppercase;
+  }
+
+  /* CERTIFICATIONS */
+  #certs .container{max-width:1100px;margin:auto;width:100%;}
+  .certs-grid{
+    display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));
+    gap:1.5rem;margin-top:1rem;
+  }
+  .cert-card{
+    background:var(--surface);
+    border:1px solid var(--border);
+    padding:2rem;position:relative;
+    overflow:hidden;transition:all 0.4s;
+    cursor:none;
+  }
+  .cert-card::after{
+    content:'';position:absolute;
+    bottom:0;left:0;right:0;height:2px;
+    background:var(--accent);transform:scaleX(0);
+    transition:transform 0.4s;transform-origin:left;
+  }
+  .cert-card:hover::after{transform:scaleX(1);}
+  .cert-card:hover{transform:translateY(-5px);}
+  .cert-num{
+    font-family:'Playfair Display',serif;
+    font-size:3rem;font-weight:900;
+    color:var(--border);position:absolute;
+    top:1rem;right:1.5rem;line-height:1;
+  }
+  .cert-name{
+    font-size:0.95rem;font-weight:500;
+    color:var(--text);line-height:1.5;
+    max-width:220px;
+  }
+  .cert-issuer{
+    font-size:0.75rem;color:var(--accent);
+    letter-spacing:0.1em;text-transform:uppercase;margin-top:0.75rem;
+  }
+
+  /* CONTACT */
+  #contact{
+    justify-content:center;
+    min-height:80vh;
+  }
+  #contact .container{
+    max-width:700px;margin:auto;
+    text-align:center;width:100%;
+  }
+  #contact .sec-eyebrow{justify-content:center;}
+  #contact .sec-eyebrow::before{display:none;}
+  .contact-email{
+    font-family:'Playfair Display',serif;
+    font-size:clamp(1.2rem,3vw,2rem);
+    color:var(--accent);text-decoration:none;
+    border-bottom:1px solid var(--border);
+    padding-bottom:0.5rem;display:inline-block;
+    margin:2rem 0;transition:border-color 0.3s;
+  }
+  .contact-email:hover{border-color:var(--accent);}
+  .contact-meta{
+    color:var(--muted);font-size:0.9rem;line-height:2;margin-bottom:2rem;
+  }
+
+  /* FOOTER */
+  footer{
+    position:relative;z-index:1;
+    border-top:1px solid var(--border);
+    padding:2rem 4rem;
+    display:flex;justify-content:space-between;align-items:center;
+  }
+  footer p{color:var(--muted);font-size:0.8rem;letter-spacing:0.05em;}
+  .footer-logo{
+    font-family:'Playfair Display',serif;
+    color:var(--accent);font-size:1.1rem;
+  }
+
+  /* ANIMATIONS */
+  @keyframes fadeUp{
+    from{opacity:0;transform:translateY(30px);}
+    to{opacity:1;transform:translateY(0);}
+  }
+  @keyframes fadeIn{
+    from{opacity:0;}to{opacity:1;}
+  }
+  .reveal{
+    opacity:0;transform:translateY(30px);
+    transition:all 0.7s ease;
+  }
+  .reveal.visible{opacity:1;transform:translateY(0);}
+
+  
+
+  /* GRID LINES */
+  .grid-lines{
+    position:fixed;inset:0;z-index:0;pointer-events:none;
+    background-image:
+      linear-gradient(rgba(26,86,219,0.06) 1px,transparent 1px),
+      linear-gradient(90deg,rgba(26,86,219,0.06) 1px,transparent 1px);
+    background-size:80px 80px;
+  }
+
+  @media(max-width:900px){
+    nav{padding:1.2rem 2rem;}
+    .nav-links{display:none;}
+    section{padding:6rem 2rem 3rem;}
+    #hero{padding-left:2rem;padding-right:2rem;}
+    .hero-content{max-width:100%;}
+    .hero-wave{opacity:0.3;}
+    .hero-stats{display:flex;flex-direction:row;gap:1.5rem;}
+    #about .container{grid-template-columns:1fr;gap:3rem;}
+    footer{flex-direction:column;gap:1rem;text-align:center;}
+  }
+</style>
+</head>
+<body>
+
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+<canvas id="bg-canvas"></canvas>
+<div class="grid-lines"></div>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">Azhan Hassan</div>
+  <ul class="nav-links">
+    <li><a href="#hero">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#certs">Certifications</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-wave">
+    <svg viewBox="0 0 600 700" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="w1" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" style="stop-color:#93c5fd;stop-opacity:0.7"/>
+          <stop offset="100%" style="stop-color:#1a56db;stop-opacity:0.85"/>
+        </linearGradient>
+        <linearGradient id="w2" x1="0%" y1="100%" x2="100%" y2="0%">
+          <stop offset="0%" style="stop-color:#1a56db;stop-opacity:0.9"/>
+          <stop offset="100%" style="stop-color:#60a5fa;stop-opacity:0.6"/>
+        </linearGradient>
+        <linearGradient id="w3" x1="50%" y1="0%" x2="50%" y2="100%">
+          <stop offset="0%" style="stop-color:#bfdbfe;stop-opacity:0.5"/>
+          <stop offset="100%" style="stop-color:#2563eb;stop-opacity:0.8"/>
+        </linearGradient>
+      </defs>
+      <!-- Back arc -->
+      <path d="M600,0 Q200,100 300,700 L600,700 Z" fill="url(#w1)"/>
+      <!-- Mid arc -->
+      <path d="M600,0 Q350,200 500,700 L600,700 Z" fill="url(#w2)"/>
+      <!-- Front arc -->
+      <path d="M600,150 Q450,350 600,700 Z" fill="url(#w3)"/>
+    </svg>
+  </div>
+  <div class="hero-content">
+    <div class="hero-eyebrow">Data Analyst & Inventory Specialist</div>
+    <h1 class="hero-title">Syed<br/><span>Azhan</span><br/>Hassan</h1>
+    <p class="hero-subtitle">Transforming complex data into strategic insights. Specialising in Power BI, Excel, Python, and supply chain analytics.</p>
+    <div class="hero-cta">
+      <a href="#experience" class="btn-primary">View Experience</a>
+      <a href="#contact" class="btn-outline">Get In Touch</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-item">
+        <div class="stat-num">10+</div>
+        <div class="stat-label">Years Exp.</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">5+</div>
+        <div class="stat-label">Companies</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">5</div>
+        <div class="stat-label">Certifications</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-scroll">
+    <div class="scroll-line"></div>
+    <span>Scroll</span>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <div class="about-text reveal">
+      <div class="sec-eyebrow">About Me</div>
+      <h2 class="sec-title">Data-Driven<br/><span>Problem Solver</span></h2>
+      <div class="sec-line"></div>
+      <p>I'm a <strong>Data Analyst & Inventory Specialist</strong> based in Altona Meadows, Melbourne, with over a decade of experience turning raw data into actionable strategies.</p>
+      <p>Currently at <strong>Isuzu Australia Limited</strong> as a Data Support Officer, I lead forecasting, order management, and Power BI reporting for national dealer networks. I'm passionate about automating repetitive workflows and building intelligent systems using tools like <strong>Microsoft Copilot</strong> and <strong>Power Automate</strong>.</p>
+      <p>My background spans supply chain analytics, CRM operations, RF engineering, and full-stack web development — giving me a uniquely broad technical perspective.</p>
+      <div class="about-info">
+        <div class="info-item"><label>Location</label><span>Melbourne, VIC</span></div>
+        <div class="info-item"><label>Email</label><span>sayedazhan@hotmail.com</span></div>
+        <div class="info-item"><label>Phone</label><span>0410 734 976</span></div>
+        <div class="info-item"><label>Availability</label><span>Open to Opportunities</span></div>
+      </div>
+    </div>
+    <div class="reveal" style="display:flex;flex-direction:column;gap:1.5rem;">
+      <div style="background:var(--surface);border:1px solid var(--border);padding:2rem;">
+        <div style="font-family:'Playfair Display',serif;font-size:1rem;color:var(--accent);margin-bottom:1rem;">Education</div>
+        <div style="margin-bottom:1.2rem;">
+          <div style="font-size:0.9rem;color:var(--text);font-weight:500;">Masters in Information Technology</div>
+          <div style="font-size:0.8rem;color:var(--muted);margin-top:0.2rem;">University of Ballarat, Victoria · 2012–2014</div>
+        </div>
+        <div style="margin-bottom:1.2rem;">
+          <div style="font-size:0.9rem;color:var(--text);font-weight:500;">Bachelor of Information Technology</div>
+          <div style="font-size:0.8rem;color:var(--muted);margin-top:0.2rem;">FAST-NUCES, Pakistan · 2005–2010</div>
+        </div>
+        <div>
+          <div style="font-size:0.9rem;color:var(--text);font-weight:500;">Professional Year — IT</div>
+          <div style="font-size:0.8rem;color:var(--muted);margin-top:0.2rem;">ACS, Victoria · 2015</div>
+        </div>
+      </div>
+      <div style="background:var(--surface);border:1px solid var(--border);padding:2rem;">
+        <div style="font-family:'Playfair Display',serif;font-size:1rem;color:var(--accent);margin-bottom:1rem;">Strengths</div>
+        <div style="display:flex;flex-wrap:wrap;gap:0.5rem;">
+          <span style="padding:0.3rem 0.8rem;border:1px solid var(--border);font-size:0.72rem;color:var(--muted);letter-spacing:0.08em;">Risk Management</span>
+          <span style="padding:0.3rem 0.8rem;border:1px solid var(--border);font-size:0.72rem;color:var(--muted);letter-spacing:0.08em;">Trend Forecasting</span>
+          <span style="padding:0.3rem 0.8rem;border:1px solid var(--border);font-size:0.72rem;color:var(--muted);letter-spacing:0.08em;">Process Improvement</span>
+          <span style="padding:0.3rem 0.8rem;border:1px solid var(--border);font-size:0.72rem;color:var(--muted);letter-spacing:0.08em;">Critical Thinking</span>
+          <span style="padding:0.3rem 0.8rem;border:1px solid var(--border);font-size:0.72rem;color:var(--muted);letter-spacing:0.08em;">Team Leadership</span>
+          <span style="padding:0.3rem 0.8rem;border:1px solid var(--border);font-size:0.72rem;color:var(--muted);letter-spacing:0.08em;">Data-Driven Strategy</span>
+          <span style="padding:0.3rem 0.8rem;border:1px solid var(--border);font-size:0.72rem;color:var(--muted);letter-spacing:0.08em;">Customer Focus</span>
+          <span style="padding:0.3rem 0.8rem;border:1px solid var(--border);font-size:0.72rem;color:var(--muted);letter-spacing:0.08em;">Attention to Detail</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" style="min-height:auto;padding-top:5rem;padding-bottom:5rem;">
+  <div class="container">
+    <div class="reveal">
+      <div class="sec-eyebrow">Technical Skills</div>
+      <h2 class="sec-title">My <span>Toolkit</span></h2>
+      <div class="sec-line"></div>
+    </div>
+    <div class="skills-grid">
+        <div class="skill-card reveal" style="transition-delay:0.0s;">
+          <div class="skill-icon">📊</div>
+          <div class="skill-name">Power BI</div>
+          <div class="skill-level"><div class="skill-bar" style="width:0%" data-width="92%"></div></div>
+        </div>
+        <div class="skill-card reveal" style="transition-delay:0.05s;">
+          <div class="skill-icon">📗</div>
+          <div class="skill-name">Advanced Excel</div>
+          <div class="skill-level"><div class="skill-bar" style="width:0%" data-width="95%"></div></div>
+        </div>
+        <div class="skill-card reveal" style="transition-delay:0.1s;">
+          <div class="skill-icon">🐍</div>
+          <div class="skill-name">Python</div>
+          <div class="skill-level"><div class="skill-bar" style="width:0%" data-width="75%"></div></div>
+        </div>
+        <div class="skill-card reveal" style="transition-delay:0.15000000000000002s;">
+          <div class="skill-icon">🗄️</div>
+          <div class="skill-name">SQL / MySQL</div>
+          <div class="skill-level"><div class="skill-bar" style="width:0%" data-width="82%"></div></div>
+        </div>
+        <div class="skill-card reveal" style="transition-delay:0.2s;">
+          <div class="skill-icon">⚡</div>
+          <div class="skill-name">Power Automate</div>
+          <div class="skill-level"><div class="skill-bar" style="width:0%" data-width="88%"></div></div>
+        </div>
+        <div class="skill-card reveal" style="transition-delay:0.25s;">
+          <div class="skill-icon">🤖</div>
+          <div class="skill-name">Copilot AI</div>
+          <div class="skill-level"><div class="skill-bar" style="width:0%" data-width="80%"></div></div>
+        </div>
+        <div class="skill-card reveal" style="transition-delay:0.30000000000000004s;">
+          <div class="skill-icon">📈</div>
+          <div class="skill-name">DAX</div>
+          <div class="skill-level"><div class="skill-bar" style="width:0%" data-width="85%"></div></div>
+        </div>
+        <div class="skill-card reveal" style="transition-delay:0.35000000000000003s;">
+          <div class="skill-icon">💼</div>
+          <div class="skill-name">Salesforce CRM</div>
+          <div class="skill-level"><div class="skill-bar" style="width:0%" data-width="78%"></div></div>
+        </div>
+        <div class="skill-card reveal" style="transition-delay:0.4s;">
+          <div class="skill-icon">☁️</div>
+          <div class="skill-name">MS Office 365</div>
+          <div class="skill-level"><div class="skill-bar" style="width:0%" data-width="95%"></div></div>
+        </div>
+        <div class="skill-card reveal" style="transition-delay:0.45s;">
+          <div class="skill-icon">🔄</div>
+          <div class="skill-name">ETL / ELT</div>
+          <div class="skill-level"><div class="skill-bar" style="width:0%" data-width="80%"></div></div>
+        </div>
+        <div class="skill-card reveal" style="transition-delay:0.5s;">
+          <div class="skill-icon">📉</div>
+          <div class="skill-name">Statistical Modelling</div>
+          <div class="skill-level"><div class="skill-bar" style="width:0%" data-width="72%"></div></div>
+        </div>
+        <div class="skill-card reveal" style="transition-delay:0.55s;">
+          <div class="skill-icon">🌐</div>
+          <div class="skill-name">PHP / Web Dev</div>
+          <div class="skill-level"><div class="skill-bar" style="width:0%" data-width="65%"></div></div>
+        </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="container">
+    <div class="reveal">
+      <div class="sec-eyebrow">Career Path</div>
+      <h2 class="sec-title">Work <span>Experience</span></h2>
+      <div class="sec-line"></div>
+    </div>
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">Oct 2023 – Present</div>
+        <div class="timeline-role">Data Support Officer — Inventory Analyst</div>
+        <div class="timeline-company">Isuzu Australia Limited · Inventory Control / Supply Chain</div>
+        <div class="timeline-desc">Led forecasting and order management for national dealer networks. Built Power BI dashboards for management reporting. Implemented Microsoft Copilot agent for procurement pricing automation and developed Power Automate workflows to streamline email inquiry handling.</div>
+        <div class="timeline-tags">
+          <span class="tag">Power BI</span><span class="tag">Excel</span><span class="tag">Power Automate</span><span class="tag">Copilot AI</span><span class="tag">Supply Chain</span>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">Oct 2022 – Oct 2023</div>
+        <div class="timeline-role">Customer / Data Support Officer</div>
+        <div class="timeline-company">Coles Group</div>
+        <div class="timeline-desc">Processed customer orders via CRM platforms, validated data using Excel, and generated daily/weekly Power BI reports to support managerial decision-making. Managed supplier purchase orders and ensured accurate system records.</div>
+        <div class="timeline-tags">
+          <span class="tag">CRM</span><span class="tag">Power BI</span><span class="tag">Excel</span><span class="tag">Data Validation</span>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">Nov 2019 – Sep 2022</div>
+        <div class="timeline-role">Franchise Manager</div>
+        <div class="timeline-company">Keen To Clean Group</div>
+        <div class="timeline-desc">Managed customer records, coordinated job assignments, and handled invoicing using franchise management software. Maintained Excel workbooks for financial and tax purposes.</div>
+        <div class="timeline-tags">
+          <span class="tag">Operations</span><span class="tag">Excel</span><span class="tag">Customer Management</span>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">Aug 2016 – Aug 2019</div>
+        <div class="timeline-role">RF Engineer</div>
+        <div class="timeline-company">Tele Resources Engineering</div>
+        <div class="timeline-desc">Evaluated signal strengths and managed data transmission with BTS boosters using Fleet Manager. Utilised Basecamp for route mapping. Reviewed and uploaded final reports to the company database.</div>
+        <div class="timeline-tags">
+          <span class="tag">RF Analysis</span><span class="tag">Fleet Manager</span><span class="tag">Data Reporting</span>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">2012 – 2015</div>
+        <div class="timeline-role">Analyst Programmer</div>
+        <div class="timeline-company">Engineering People Pty Ltd · KIZKAZ</div>
+        <div class="timeline-desc">Designed and developed full-stack web portals from scratch. Built a PHP/MySQL backend portal for seamless database integration and developed a complete job portal platform with user-friendly frontend design.</div>
+        <div class="timeline-tags">
+          <span class="tag">PHP</span><span class="tag">MySQL</span><span class="tag">Web Development</span><span class="tag">Backend</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section id="certs" style="min-height:auto;padding-top:4rem;padding-bottom:6rem;">
+  <div class="container">
+    <div class="reveal">
+      <div class="sec-eyebrow">Credentials</div>
+      <h2 class="sec-title">Certifi<span>cations</span></h2>
+      <div class="sec-line"></div>
+    </div>
+    <div class="certs-grid">
+      <div class="cert-card reveal">
+        <div class="cert-num">01</div>
+        <div class="cert-name">Microsoft Excel Advanced — Formulas &amp; Functions</div>
+        <div class="cert-issuer">AIM</div>
+      </div>
+      <div class="cert-card reveal">
+        <div class="cert-num">02</div>
+        <div class="cert-name">Microsoft Power Platform Associate — PL900</div>
+        <div class="cert-issuer">Microsoft</div>
+      </div>
+      <div class="cert-card reveal">
+        <div class="cert-num">03</div>
+        <div class="cert-name">Power BI Data Analyst — PL300</div>
+        <div class="cert-issuer">Microsoft</div>
+      </div>
+      <div class="cert-card reveal">
+        <div class="cert-num">04</div>
+        <div class="cert-name">Career Essentials in Data Analysis</div>
+        <div class="cert-issuer">Microsoft &amp; LinkedIn</div>
+      </div>
+      <div class="cert-card reveal">
+        <div class="cert-num">05</div>
+        <div class="cert-name">Google Analytics Certification (GA4)</div>
+        <div class="cert-issuer">Google</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container reveal">
+    <div class="sec-eyebrow">Let's Connect</div>
+    <h2 class="sec-title">Get In <span>Touch</span></h2>
+    <div class="sec-line" style="margin:0 auto 2rem;"></div>
+    <p style="color:var(--muted);font-size:1rem;line-height:1.8;max-width:500px;margin:auto;">
+      Open to new opportunities in data analytics, business intelligence, and supply chain operations. Let's talk.
+    </p>
+    <a href="mailto:sayedazhan@hotmail.com" class="contact-email">sayedazhan@hotmail.com</a>
+    <div class="contact-meta">
+      <div>📍 2 Walters Court, Altona Meadows VIC 3028</div>
+      <div>📞 0410 734 976</div>
+    </div>
+    <a href="mailto:sayedazhan@hotmail.com" class="btn-primary">Send a Message</a>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-logo">Azhan Hassan</div>
+  <p>© 2025 Syed Azhan Hassan · Melbourne, Australia</p>
+  <p style="color:var(--muted);font-size:0.75rem;">Data Analyst · Power BI · Supply Chain</p>
+</footer>
+
+<script>
+// ── CURSOR ──
+const cursor = document.getElementById('cursor');
+const ring = document.getElementById('cursor-ring');
+let mx=0,my=0,rx=0,ry=0;
+document.addEventListener('mousemove',e=>{
+  mx=e.clientX;my=e.clientY;
+  cursor.style.left=mx+'px';cursor.style.top=my+'px';
+});
+function animRing(){
+  rx+=(mx-rx)*0.12;ry+=(my-ry)*0.12;
+  ring.style.left=rx+'px';ring.style.top=ry+'px';
+  requestAnimationFrame(animRing);
+}animRing();
+document.querySelectorAll('a,button,.skill-card,.cert-card').forEach(el=>{
+  el.addEventListener('mouseenter',()=>{
+    cursor.style.width='20px';cursor.style.height='20px';
+    ring.style.width='60px';ring.style.height='60px';
+  });
+  el.addEventListener('mouseleave',()=>{
+    cursor.style.width='12px';cursor.style.height='12px';
+    ring.style.width='40px';ring.style.height='40px';
+  });
+});
+
+// ── CANVAS PARTICLES ──
+const canvas=document.getElementById('bg-canvas');
+const ctx=canvas.getContext('2d');
+let W,H,particles=[];
+function resize(){W=canvas.width=window.innerWidth;H=canvas.height=window.innerHeight;}
+resize();window.addEventListener('resize',resize);
+class Particle{
+  constructor(){this.reset();}
+  reset(){
+    this.x=Math.random()*W;this.y=Math.random()*H;
+    this.vx=(Math.random()-.5)*.3;this.vy=(Math.random()-.5)*.3;
+    this.r=Math.random()*1.5+.5;this.a=Math.random()*.4+.1;
+    this.life=Math.random()*300+200;this.age=0;
+  }
+  update(){
+    this.x+=this.vx;this.y+=this.vy;this.age++;
+    if(this.age>this.life||this.x<0||this.x>W||this.y<0||this.y>H)this.reset();
+  }
+  draw(){
+    const fade=Math.min(this.age/30,(this.life-this.age)/30);
+    ctx.beginPath();ctx.arc(this.x,this.y,this.r,0,Math.PI*2);
+    ctx.fillStyle=`rgba(26,86,219,${this.a*fade})`;ctx.fill();
+  }
+}
+for(let i=0;i<120;i++)particles.push(new Particle());
+
+// connections
+function drawLines(){
+  for(let i=0;i<particles.length;i++){
+    for(let j=i+1;j<particles.length;j++){
+      const dx=particles[i].x-particles[j].x,dy=particles[i].y-particles[j].y;
+      const d=Math.sqrt(dx*dx+dy*dy);
+      if(d<120){
+        ctx.beginPath();ctx.moveTo(particles[i].x,particles[i].y);
+        ctx.lineTo(particles[j].x,particles[j].y);
+        ctx.strokeStyle=`rgba(26,86,219,${(1-d/120)*0.12})`;
+        ctx.lineWidth=.5;ctx.stroke();
+      }
+    }
+  }
+}
+function animCanvas(){
+  ctx.clearRect(0,0,W,H);
+  particles.forEach(p=>{p.update();p.draw();});
+  drawLines();requestAnimationFrame(animCanvas);
+}animCanvas();
+
+// ── SCROLL REVEAL ──
+const observer=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      e.target.classList.add('visible');
+      // animate skill bars
+      e.target.querySelectorAll('.skill-bar').forEach(b=>{
+        b.style.width=b.dataset.width;
+      });
+      if(e.target.classList.contains('skill-bar')){
+        e.target.style.width=e.target.dataset.width;
+      }
+    }
+  });
+},{threshold:0.15});
+document.querySelectorAll('.reveal,.timeline-item').forEach(el=>observer.observe(el));
+
+// also observe skill bars directly
+const barObs=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{if(e.isIntersecting)e.target.style.width=e.target.dataset.width;});
+},{threshold:0.5});
+document.querySelectorAll('.skill-bar').forEach(b=>barObs.observe(b));
+
+// ── 3D TILT on skill cards ──
+document.querySelectorAll('.skill-card').forEach(card=>{
+  card.addEventListener('mousemove',e=>{
+    const r=card.getBoundingClientRect();
+    const x=(e.clientX-r.left)/r.width-.5;
+    const y=(e.clientY-r.top)/r.height-.5;
+    card.style.transform=`translateY(-8px) rotateX(${-y*15}deg) rotateY(${x*15}deg)`;
+  });
+  card.addEventListener('mouseleave',()=>{
+    card.style.transform='';
+  });
+});
+
+
+</script>
+</body>
+</html>
