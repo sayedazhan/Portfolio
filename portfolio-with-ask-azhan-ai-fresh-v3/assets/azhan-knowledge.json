@@ -1,0 +1,427 @@
+{
+  "profileName": "Syed Azhan Hassan",
+  "assistantName": "Ask Azhan AI",
+  "series": [
+    "AI & Data Mastery",
+    "AI at Work",
+    "AI Agent Builder"
+  ],
+  "entries": [
+    {
+      "type": "profile",
+      "title": "About Syed Azhan Hassan",
+      "series": "Portfolio",
+      "episode": null,
+      "summary": "Syed Azhan Hassan is a data and AI professional whose portfolio highlights data analytics, Power BI, Microsoft Fabric, automation, AI agents, technical education, projects, experience, certifications and learning content.",
+      "topics": [
+        "Data analytics",
+        "Power BI",
+        "Microsoft Fabric",
+        "AI automation",
+        "AI agents",
+        "technical education",
+        "portfolio",
+        "projects",
+        "experience",
+        "certifications"
+      ],
+      "url": "index.html#about",
+      "searchText": "Syed Azhan Hassan | Data & AI Portfolio AH SYED AZHAN HASSAN Turning data into insights that drive impact. Home Experience Portfolio Learning Skills Certifications About Contact in Download Resume ↓ Data Analyst · Power BI Specialist · AI Enthusiast I turn data into insights that drive impact. I help businesses make smarter decisions using analytics, automation and AI. I also create practical learning content for the next generation of data professionals. Explore My Work → Start Learning → View My Experience Business Performance Executive analytics overview LIVE INSIGHTS Total Sales $2.45M ▲ 15.6% Orders 18,746 ▲ 10.3% Accuracy 92% Quality KPI Monthly Revenue Jan – Dec Growth Trend +18.4% Target Creator of Data & AI Mastery A free 10-part learning series for modern data professionals. ★ Featured Series Data & AI Mastery A free 10-part learning journey covering data analytics, SQL, Power BI, Microsoft Fabric, AI and career growth. 10 Episodes 100+ Slides Free Forever Practical Examples Start Learning Now → View All Episodes 1 Core Skills 2 Modern Stack 3 SQL 4 Power BI 5 AI in BI 6 Fabric 7 Portfolio 8 AI Tools 9 Projects 10 Leadership Career Path Work Experience Professional experience across automotive, retail, operations and technical analytics. Data Analyst Isuzu Australia Limited · Melbourne · Inventory Control / Business Intelligence Oct 2023 – Present Report on automotive spare parts performance to inform sales decisions and ensure smooth inventory flow aligned with market demand. Integrate and link data from warehouse systems and international stakeholders, analysing it to generate insights for senior leaders. Manage end-to-end reporting and forecasting for national and global supply chain teams using Power BI and advanced Excel. Developed AI-enabled automation solutions using Microsoft Copilot Studio and Power Automate. Power BI Excel Power Automate Copilot Studio Supply Chain Data Analyst Coles Group Oct 2022 – Oct 2023 Produced daily and weekly operational reporting using Excel and Power BI to support performance monitoring and management decision-making. Validated and integrated customer and supplier data across multiple CRM systems, ensuring accuracy, consistency, and data integrity. Proactively identified and resolved data discrepancies to improve reporting reliability and operational confidence. CRM Power BI Excel Data Validation Franchise Manager Keen To Clean Group Nov 2019 – Sep 2022 Managed operational and customer data through franchise management systems to support scheduling, billing, and service coordination. Maintained structured Excel reporting for financial tracking, tax preparation, and operational record management. Monitored performance metrics to improve business efficiency and customer satisfaction. Operations Excel Customer Management Data Insights Engineer Tele Resources Engineering, Australia 2016 – 2019 Analysed signal strength and transmission performance data to support operational and technical decision-making. Prepared structured analytical reports in line with quality assurance standards, ensuring accuracy and consistency in technical documentation. Applied critical thinking to identify network performance issues and recommend corrective actions to improve system reliability. Technical Analysis Data Reporting QA Problem Solving Portfolio Featured Projects Selected analytics, forecasting and automation work focused on measurable business outcomes. RESEARCH · NEXT.JS Future Mobility Lab Exploring how artificial intelligence, data and engineering are shaping the future of transport through evidence-based research and analysis. Visit Website → POWER BI · DAX Sales Performance Dashboard End-to-end Power BI reporting with business KPIs, trends and actionable insights. View Project → SUPPLY CHAIN Supply Chain Analytics Forecasting, inventory optimisation and supplier performance analysis. View Project → PYTHON · FORECASTING Demand Forecasting Model Time-series modelling designed to improve planning and inventory decisions. View Project → POWER AUTOMATE · AI Automation with Power Platform Automated email, reporting and operational workflows using Power Automate. View Project → Toolbox Skills & Technologies A modern analytics toolkit covering data modelling, reporting, automation and AI-assisted workflows. SQL SQL BI Power BI XL Excel Py Python DAX DAX PQ Power Query PA Power Automate F Microsoft Fabric AI AI / LLMs GH GitHub Credentials Certifications Professional credentials supporting my work across analytics, Microsoft technologies and AI-enabled business solutions. 01 Completed Microsoft Excel Advanced AIM 02 Completed Power Platform Fundamentals (PL-900) Microsoft 03 Completed Career Essentials in Data Analysis Microsoft & LinkedIn 04 Completed Google Analytics Certification (GA4) Google 05 In Progress Power BI Data Analyst (PL-300) Microsoft 06 In Progress Azure Fundamentals (AZ-900) Microsoft 07 In Progress AI Business Professional (AZ-730) Microsoft Credential links can be added as they become available. About Me Data-driven problem solver with a broad technical background. I am a data and inventory professional based in Melbourne with experience across analytics, supply chain, CRM operations, automation and web development. My focus is turning complex information into clear decisions and practical systems. I work with Power BI, Excel, Python, SQL, Power Automate and Copilot Studio, while continuing to expand into Microsoft Fabric and AI-powered analytics. Power BI Supply Chain Forecasting Automation AI Agents Data Storytelling Let's Connect Let’s build something meaningful with data. I’m open to conversations about data analytics, business intelligence, Power BI, AI automation and Microsoft Fabric. Whether you’re hiring, collaborating or exploring an idea, I’d be glad to hear from you. Email Me → Connect on LinkedIn View Experience Email sayedazhan@hotmail.com Phone 0410 734 976 Location Melbourne, Victoria Availability Open to opportunities BI Data Analytics Turn operational and business data into clear, decision-ready insights. PBI Power BI & Reporting Build interactive dashboards, KPI reporting and executive-ready stories. AI AI & Automation Streamline repetitive processes with Copilot, agents and Power Automate. F Microsoft Fabric Explore unified data, analytics and modern business intelligence solutions. Currently Building Data & AI Mastery A free 10-part educational series helping professionals grow from analytics foundations to data leadership. Explore the Learning Hub → Syed Azhan Hassan Data Analyst · AI & Automation · Microsoft Fabric · Power BI Turning data into decisions. · © 2026"
+    },
+    {
+      "type": "episode",
+      "title": "Core Skills Every Data Analyst Needs",
+      "series": "AI & Data Mastery",
+      "episode": 1,
+      "summary": "Build the essential technical, analytical and communication skills required for a strong analytics career.",
+      "topics": [
+        "Core Skills Every Data Analyst Needs Build the essential technical",
+        "analytical and communication skills required for a strong analytics career."
+      ],
+      "url": "episode-1.html",
+      "searchText": "Core Skills Every Data Analyst Needs | Data & AI Mastery AH · SYED AZHAN HASSAN Learning Hub ← Back to Data & AI Mastery Data & AI Mastery · Episode 1 of 10 Core Skills Every Data Analyst Needs Build the essential technical, analytical and communication skills required for a strong analytics career. ▣ 10 slides ◷ 5–7 minute read ✓ Free learning series Learning Journey 1 Core Skills 2 Modern Data Stack 3 SQL 4 Power BI Fundamentals 5 AI in Power BI 6 Microsoft Fabric 7 Data Portfolio 8 AI for Analysts 9 Real-World Projects 10 Data Leadership What you will learn Build the essential technical, analytical and communication skills required for a strong analytics career. Analytical thinking Excel and spreadsheets SQL foundations Data visualisation Business communication Continuous learning Episode carousel ← Slide 1 of 10 → Original slide collection The complete episode artwork is maintained in the public Data & AI Mastery repository. View source slides Continue learning Follow the structured path and move to the next episode when you are ready. View all episodes ← Beginning of series Episode 2 · Modern Data Stack → Syed Azhan Hassan · Data Analyst · AI & Automation · Educator © 2026 Syed Azhan Hassan"
+    },
+    {
+      "type": "episode",
+      "title": "Modern Data Stack",
+      "series": "AI & Data Mastery",
+      "episode": 2,
+      "summary": "Understand how modern platforms connect data ingestion, storage, transformation, modelling and reporting.",
+      "topics": [
+        "Modern Data Stack Understand how modern platforms connect data ingestion",
+        "storage",
+        "transformation",
+        "modelling and reporting."
+      ],
+      "url": "episode-2.html",
+      "searchText": "Modern Data Stack | Data & AI Mastery AH · SYED AZHAN HASSAN Learning Hub ← Back to Data & AI Mastery Data & AI Mastery · Episode 2 of 10 Modern Data Stack Understand how modern platforms connect data ingestion, storage, transformation, modelling and reporting. ▣ 10 slides ◷ 5–7 minute read ✓ Free learning series Learning Journey 1 Core Skills 2 Modern Data Stack 3 SQL 4 Power BI Fundamentals 5 AI in Power BI 6 Microsoft Fabric 7 Data Portfolio 8 AI for Analysts 9 Real-World Projects 10 Data Leadership What you will learn Understand how modern platforms connect data ingestion, storage, transformation, modelling and reporting. Data sources and ingestion Cloud data storage Transformation layers Semantic models BI and reporting Governance and security Episode carousel ← Slide 1 of 10 → Original slide collection The complete episode artwork is maintained in the public Data & AI Mastery repository. View source slides Continue learning Follow the structured path and move to the next episode when you are ready. View all episodes ← Episode 1 · Core Skills Episode 3 · SQL → Syed Azhan Hassan · Data Analyst · AI & Automation · Educator © 2026 Syed Azhan Hassan"
+    },
+    {
+      "type": "episode",
+      "title": "SQL for Data Analysts",
+      "series": "AI & Data Mastery",
+      "episode": 3,
+      "summary": "Learn the SQL concepts analysts use to explore, clean, join and summarise business data.",
+      "topics": [
+        "SQL for Data Analysts Learn the SQL concepts analysts use to explore",
+        "clean",
+        "join and summarise business data."
+      ],
+      "url": "episode-3.html",
+      "searchText": "SQL for Data Analysts | Data & AI Mastery AH · SYED AZHAN HASSAN Learning Hub ← Back to Data & AI Mastery Data & AI Mastery · Episode 3 of 10 SQL for Data Analysts Learn the SQL concepts analysts use to explore, clean, join and summarise business data. ▣ 10 slides ◷ 5–7 minute read ✓ Free learning series Learning Journey 1 Core Skills 2 Modern Data Stack 3 SQL 4 Power BI Fundamentals 5 AI in Power BI 6 Microsoft Fabric 7 Data Portfolio 8 AI for Analysts 9 Real-World Projects 10 Data Leadership What you will learn Learn the SQL concepts analysts use to explore, clean, join and summarise business data. SELECT and filtering Sorting and grouping Joins CASE expressions Window functions Query best practices Episode carousel ← Slide 1 of 10 → Original slide collection The complete episode artwork is maintained in the public Data & AI Mastery repository. View source slides Continue learning Follow the structured path and move to the next episode when you are ready. View all episodes ← Episode 2 · Modern Data Stack Episode 4 · Power BI Fundamentals → Syed Azhan Hassan · Data Analyst · AI & Automation · Educator © 2026 Syed Azhan Hassan"
+    },
+    {
+      "type": "episode",
+      "title": "Power BI Fundamentals",
+      "series": "AI & Data Mastery",
+      "episode": 4,
+      "summary": "Learn the core concepts behind effective Power BI reporting and how to turn raw business data into clear, interactive insights.",
+      "topics": [
+        "interactive insights."
+      ],
+      "url": "episode-4.html",
+      "searchText": "Power BI Fundamentals | Data & AI Mastery AH · SYED AZHAN HASSAN Learning Hub ← Back to Data & AI Mastery Data & AI Mastery · Episode 4 of 10 Power BI Fundamentals Learn the core concepts behind effective Power BI reporting and how to turn raw business data into clear, interactive insights. ▣ 10 slides ◷ 5–7 minute read ✓ Free learning series Learning Journey 1 Core Skills 2 Modern Data Stack 3 SQL 4 Power BI Fundamentals 5 AI in Power BI 6 Microsoft Fabric 7 Data Portfolio 8 AI for Analysts 9 Real-World Projects 10 Data Leadership What you will learn Learn the core concepts behind effective Power BI reporting and how to turn raw business data into clear, interactive insights. Power BI architecture Power Query workflow Data modelling DAX foundations Visual best practices Publishing and sharing Episode carousel ← Slide 1 of 10 → Original slide collection The complete episode artwork is maintained in the public Data & AI Mastery repository. View source slides Continue learning Follow the structured path and move to the next episode when you are ready. View all episodes ← Episode 3 · SQL Episode 5 · AI in Power BI → Syed Azhan Hassan · Data Analyst · AI & Automation · Educator © 2026 Syed Azhan Hassan"
+    },
+    {
+      "type": "episode",
+      "title": "AI in Power BI",
+      "series": "AI & Data Mastery",
+      "episode": 5,
+      "summary": "Use Copilot, smart narratives and AI visuals to accelerate analysis and communicate insights more effectively.",
+      "topics": [
+        "AI in Power BI Use Copilot"
+      ],
+      "url": "episode-5.html",
+      "searchText": "AI in Power BI | Data & AI Mastery AH · SYED AZHAN HASSAN Learning Hub ← Back to Data & AI Mastery Data & AI Mastery · Episode 5 of 10 AI in Power BI Use Copilot, smart narratives and AI visuals to accelerate analysis and communicate insights more effectively. ▣ 10 slides ◷ 5–7 minute read ✓ Free learning series Learning Journey 1 Core Skills 2 Modern Data Stack 3 SQL 4 Power BI Fundamentals 5 AI in Power BI 6 Microsoft Fabric 7 Data Portfolio 8 AI for Analysts 9 Real-World Projects 10 Data Leadership What you will learn Use Copilot, smart narratives and AI visuals to accelerate analysis and communicate insights more effectively. Copilot workflows Smart narratives Key influencers Decomposition trees Natural-language Q&A Responsible AI use Episode carousel ← Slide 1 of 10 → Original slide collection The complete episode artwork is maintained in the public Data & AI Mastery repository. View source slides Continue learning Follow the structured path and move to the next episode when you are ready. View all episodes ← Episode 4 · Power BI Fundamentals Episode 6 · Microsoft Fabric → Syed Azhan Hassan · Data Analyst · AI & Automation · Educator © 2026 Syed Azhan Hassan"
+    },
+    {
+      "type": "episode",
+      "title": "Microsoft Fabric",
+      "series": "AI & Data Mastery",
+      "episode": 6,
+      "summary": "Understand OneLake and how Microsoft Fabric brings data engineering, analytics and business intelligence together.",
+      "topics": [
+        "analytics and business intelligence together."
+      ],
+      "url": "episode-6.html",
+      "searchText": "Microsoft Fabric | Data & AI Mastery AH · SYED AZHAN HASSAN Learning Hub ← Back to Data & AI Mastery Data & AI Mastery · Episode 6 of 10 Microsoft Fabric Understand OneLake and how Microsoft Fabric brings data engineering, analytics and business intelligence together. ▣ 10 slides ◷ 5–7 minute read ✓ Free learning series Learning Journey 1 Core Skills 2 Modern Data Stack 3 SQL 4 Power BI Fundamentals 5 AI in Power BI 6 Microsoft Fabric 7 Data Portfolio 8 AI for Analysts 9 Real-World Projects 10 Data Leadership What you will learn Understand OneLake and how Microsoft Fabric brings data engineering, analytics and business intelligence together. Why Fabric exists OneLake Lakehouse concepts Data Factory Real-time analytics Power BI integration Episode carousel ← Slide 1 of 10 → Original slide collection The complete episode artwork is maintained in the public Data & AI Mastery repository. View source slides Continue learning Follow the structured path and move to the next episode when you are ready. View all episodes ← Episode 5 · AI in Power BI Episode 7 · Data Portfolio → Syed Azhan Hassan · Data Analyst · AI & Automation · Educator © 2026 Syed Azhan Hassan"
+    },
+    {
+      "type": "episode",
+      "title": "Building a Strong Data Portfolio",
+      "series": "AI & Data Mastery",
+      "episode": 7,
+      "summary": "Create projects and case studies that demonstrate your process, technical capability and business impact.",
+      "topics": [
+        "technical capability and business impact."
+      ],
+      "url": "episode-7.html",
+      "searchText": "Building a Strong Data Portfolio | Data & AI Mastery AH · SYED AZHAN HASSAN Learning Hub ← Back to Data & AI Mastery Data & AI Mastery · Episode 7 of 10 Building a Strong Data Portfolio Create projects and case studies that demonstrate your process, technical capability and business impact. ▣ 10 slides ◷ 5–7 minute read ✓ Free learning series Learning Journey 1 Core Skills 2 Modern Data Stack 3 SQL 4 Power BI Fundamentals 5 AI in Power BI 6 Microsoft Fabric 7 Data Portfolio 8 AI for Analysts 9 Real-World Projects 10 Data Leadership What you will learn Create projects and case studies that demonstrate your process, technical capability and business impact. Choose meaningful projects Explain the business problem Show your process Present clear outcomes Publish professionally Build credibility Episode carousel ← Slide 1 of 10 → Original slide collection The complete episode artwork is maintained in the public Data & AI Mastery repository. View source slides Continue learning Follow the structured path and move to the next episode when you are ready. View all episodes ← Episode 6 · Microsoft Fabric Episode 8 · AI for Analysts → Syed Azhan Hassan · Data Analyst · AI & Automation · Educator © 2026 Syed Azhan Hassan"
+    },
+    {
+      "type": "episode",
+      "title": "AI for Data Analysts",
+      "series": "AI & Data Mastery",
+      "episode": 8,
+      "summary": "Build an AI-enabled workflow using modern assistants, research tools and agents while keeping human judgement central.",
+      "topics": [
+        "AI for Data Analysts Build an AI",
+        "enabled workflow using modern assistants",
+        "research tools and agents while keeping human judgement central."
+      ],
+      "url": "episode-8.html",
+      "searchText": "AI for Data Analysts | Data & AI Mastery AH · SYED AZHAN HASSAN Learning Hub ← Back to Data & AI Mastery Data & AI Mastery · Episode 8 of 10 AI for Data Analysts Build an AI-enabled workflow using modern assistants, research tools and agents while keeping human judgement central. ▣ 10 slides ◷ 5–7 minute read ✓ Free learning series Learning Journey 1 Core Skills 2 Modern Data Stack 3 SQL 4 Power BI Fundamentals 5 AI in Power BI 6 Microsoft Fabric 7 Data Portfolio 8 AI for Analysts 9 Real-World Projects 10 Data Leadership What you will learn Build an AI-enabled workflow using modern assistants, research tools and agents while keeping human judgement central. ChatGPT and Copilot Claude and Gemini NotebookLM Prompt engineering AI agents Validation and governance Episode carousel ← Slide 1 of 10 → Original slide collection The complete episode artwork is maintained in the public Data & AI Mastery repository. View source slides Continue learning Follow the structured path and move to the next episode when you are ready. View all episodes ← Episode 7 · Data Portfolio Episode 9 · Real-World Projects → Syed Azhan Hassan · Data Analyst · AI & Automation · Educator © 2026 Syed Azhan Hassan"
+    },
+    {
+      "type": "episode",
+      "title": "Real-World Analytics Projects",
+      "series": "AI & Data Mastery",
+      "episode": 9,
+      "summary": "Explore practical analytics projects across sales, finance, supply chain, manufacturing, HR and customers.",
+      "topics": [
+        "Real",
+        "World Analytics Projects Explore practical analytics projects across sales",
+        "finance",
+        "supply chain",
+        "manufacturing",
+        "HR and customers."
+      ],
+      "url": "episode-9.html",
+      "searchText": "Real-World Analytics Projects | Data & AI Mastery AH · SYED AZHAN HASSAN Learning Hub ← Back to Data & AI Mastery Data & AI Mastery · Episode 9 of 10 Real-World Analytics Projects Explore practical analytics projects across sales, finance, supply chain, manufacturing, HR and customers. ▣ 10 slides ◷ 5–7 minute read ✓ Free learning series Learning Journey 1 Core Skills 2 Modern Data Stack 3 SQL 4 Power BI Fundamentals 5 AI in Power BI 6 Microsoft Fabric 7 Data Portfolio 8 AI for Analysts 9 Real-World Projects 10 Data Leadership What you will learn Explore practical analytics projects across sales, finance, supply chain, manufacturing, HR and customers. Sales analytics Finance analytics Supply chain analytics Manufacturing analytics HR analytics Customer analytics Episode carousel ← Slide 1 of 10 → Original slide collection The complete episode artwork is maintained in the public Data & AI Mastery repository. View source slides Continue learning Follow the structured path and move to the next episode when you are ready. View all episodes ← Episode 8 · AI for Analysts Episode 10 · Data Leadership → Syed Azhan Hassan · Data Analyst · AI & Automation · Educator © 2026 Syed Azhan Hassan"
+    },
+    {
+      "type": "episode",
+      "title": "Your Next Chapter as a Data Leader",
+      "series": "AI & Data Mastery",
+      "episode": 10,
+      "summary": "Move from producing reports to influencing decisions through ownership, communication and strategic thinking.",
+      "topics": [
+        "communication and strategic thinking."
+      ],
+      "url": "episode-10.html",
+      "searchText": "Your Next Chapter as a Data Leader | Data & AI Mastery AH · SYED AZHAN HASSAN Learning Hub ← Back to Data & AI Mastery Data & AI Mastery · Episode 10 of 10 Your Next Chapter as a Data Leader Move from producing reports to influencing decisions through ownership, communication and strategic thinking. ▣ 10 slides ◷ 5–7 minute read ✓ Free learning series Learning Journey 1 Core Skills 2 Modern Data Stack 3 SQL 4 Power BI Fundamentals 5 AI in Power BI 6 Microsoft Fabric 7 Data Portfolio 8 AI for Analysts 9 Real-World Projects 10 Data Leadership What you will learn Move from producing reports to influencing decisions through ownership, communication and strategic thinking. Think beyond dashboards Own business outcomes Communicate with influence Build trusted partnerships Lead responsible AI Create your next chapter Episode carousel ← Slide 1 of 10 → Original slide collection The complete episode artwork is maintained in the public Data & AI Mastery repository. View source slides Continue learning Follow the structured path and move to the next episode when you are ready. View all episodes ← Episode 9 · Real-World Projects Back to all episodes → Syed Azhan Hassan · Data Analyst · AI & Automation · Educator © 2026 Syed Azhan Hassan"
+    },
+    {
+      "type": "episode",
+      "title": "Getting Started with AI at Work",
+      "series": "AI at Work",
+      "episode": 1,
+      "summary": "Understand it. Use it. Work smarter.",
+      "topics": [
+        "Getting Started with AI at Work Understand it. Use it. Work smarter."
+      ],
+      "url": "ai-work-episode-1.html",
+      "searchText": "Getting Started with AI at Work | AI at Work AH · SYED AZHAN HASSAN Learning Hub ← Back to AI at Work AI at Work · Episode 1 of 10 Getting Started with AI at Work Understand it. Use it. Work smarter. ▣ 10 slides ◷ 5–7 minute read ✓ Free learning series AI at Work Journey 1 Getting Started with AI at Work 2 Using ChatGPT Like a Professional 3 Microsoft 365 Copilot at Work 4 Master Your Inbox with AI 5 AI for Meetings and Productivity 6 AI for Reports and Presentations 7 AI for Data and Decision-Making 8 Automating Everyday Work 9 AI Safety and Responsible Use 10 Preparing for the Future of Work What you will learn Understand it. Use it. Work smarter. AI in everyday work What AI can do Human judgement Common myths Start safely Episode carousel ← Slide 1 of 10 → Original slide collection The complete episode artwork is maintained in the public AI at Work repository. View source slides Continue learning Follow the structured path and move to the next episode when you are ready. View all episodes ← Beginning of series Episode 2 · Using ChatGPT Like a Professional → Syed Azhan Hassan · Data Analyst · AI & Automation · Educator © 2026 Syed Azhan Hassan"
+    },
+    {
+      "type": "episode",
+      "title": "Using ChatGPT Like a Professional",
+      "series": "AI at Work",
+      "episode": 2,
+      "summary": "Better prompts. Better outputs. Better work.",
+      "topics": [
+        "Using ChatGPT Like a Professional Better prompts. Better outputs. Better work."
+      ],
+      "url": "ai-work-episode-2.html",
+      "searchText": "Using ChatGPT Like a Professional | AI at Work AH · SYED AZHAN HASSAN Learning Hub ← Back to AI at Work AI at Work · Episode 2 of 10 Using ChatGPT Like a Professional Better prompts. Better outputs. Better work. ▣ 10 slides ◷ 5–7 minute read ✓ Free learning series AI at Work Journey 1 Getting Started with AI at Work 2 Using ChatGPT Like a Professional 3 Microsoft 365 Copilot at Work 4 Master Your Inbox with AI 5 AI for Meetings and Productivity 6 AI for Reports and Presentations 7 AI for Data and Decision-Making 8 Automating Everyday Work 9 AI Safety and Responsible Use 10 Preparing for the Future of Work What you will learn Better prompts. Better outputs. Better work. Prompt structure Context and audience Useful formats Follow-up prompts Review and verify Episode carousel ← Slide 1 of 10 → Original slide collection The complete episode artwork is maintained in the public AI at Work repository. View source slides Continue learning Follow the structured path and move to the next episode when you are ready. View all episodes ← Episode 1 · Getting Started with AI at Work Episode 3 · Microsoft 365 Copilot at Work → Syed Azhan Hassan · Data Analyst · AI & Automation · Educator © 2026 Syed Azhan Hassan"
+    },
+    {
+      "type": "episode",
+      "title": "Microsoft 365 Copilot at Work",
+      "series": "AI at Work",
+      "episode": 3,
+      "summary": "One AI assistant across your everyday tools.",
+      "topics": [
+        "Microsoft 365 Copilot at Work One AI assistant across your everyday tools."
+      ],
+      "url": "ai-work-episode-3.html",
+      "searchText": "Microsoft 365 Copilot at Work | AI at Work AH · SYED AZHAN HASSAN Learning Hub ← Back to AI at Work AI at Work · Episode 3 of 10 Microsoft 365 Copilot at Work One AI assistant across your everyday tools. ▣ 10 slides ◷ 5–7 minute read ✓ Free learning series AI at Work Journey 1 Getting Started with AI at Work 2 Using ChatGPT Like a Professional 3 Microsoft 365 Copilot at Work 4 Master Your Inbox with AI 5 AI for Meetings and Productivity 6 AI for Reports and Presentations 7 AI for Data and Decision-Making 8 Automating Everyday Work 9 AI Safety and Responsible Use 10 Preparing for the Future of Work What you will learn One AI assistant across your everyday tools. Copilot in Word Copilot in Excel Copilot in Outlook Copilot in Teams Copilot in PowerPoint Episode carousel ← Slide 1 of 10 → Original slide collection The complete episode artwork is maintained in the public AI at Work repository. View source slides Continue learning Follow the structured path and move to the next episode when you are ready. View all episodes ← Episode 2 · Using ChatGPT Like a Professional Episode 4 · Master Your Inbox with AI → Syed Azhan Hassan · Data Analyst · AI & Automation · Educator © 2026 Syed Azhan Hassan"
+    },
+    {
+      "type": "episode",
+      "title": "Master Your Inbox with AI",
+      "series": "AI at Work",
+      "episode": 4,
+      "summary": "Summarise faster. Respond better. Stay in control.",
+      "topics": [
+        "Master Your Inbox with AI Summarise faster. Respond better. Stay in control."
+      ],
+      "url": "ai-work-episode-4.html",
+      "searchText": "Master Your Inbox with AI | AI at Work AH · SYED AZHAN HASSAN Learning Hub ← Back to AI at Work AI at Work · Episode 4 of 10 Master Your Inbox with AI Summarise faster. Respond better. Stay in control. ▣ 10 slides ◷ 5–7 minute read ✓ Free learning series AI at Work Journey 1 Getting Started with AI at Work 2 Using ChatGPT Like a Professional 3 Microsoft 365 Copilot at Work 4 Master Your Inbox with AI 5 AI for Meetings and Productivity 6 AI for Reports and Presentations 7 AI for Data and Decision-Making 8 Automating Everyday Work 9 AI Safety and Responsible Use 10 Preparing for the Future of Work What you will learn Summarise faster. Respond better. Stay in control. Email summaries Professional replies Prioritisation Shared mailbox workflows Human review Episode carousel ← Slide 1 of 10 → Original slide collection The complete episode artwork is maintained in the public AI at Work repository. View source slides Continue learning Follow the structured path and move to the next episode when you are ready. View all episodes ← Episode 3 · Microsoft 365 Copilot at Work Episode 5 · AI for Meetings and Productivity → Syed Azhan Hassan · Data Analyst · AI & Automation · Educator © 2026 Syed Azhan Hassan"
+    },
+    {
+      "type": "episode",
+      "title": "AI for Meetings and Productivity",
+      "series": "AI at Work",
+      "episode": 5,
+      "summary": "Prepare better. Capture decisions. Follow up faster.",
+      "topics": [],
+      "url": "ai-work-episode-5.html",
+      "searchText": "AI for Meetings and Productivity | AI at Work AH · SYED AZHAN HASSAN Learning Hub ← Back to AI at Work AI at Work · Episode 5 of 10 AI for Meetings and Productivity Prepare better. Capture decisions. Follow up faster. ▣ 10 slides ◷ 5–7 minute read ✓ Free learning series AI at Work Journey 1 Getting Started with AI at Work 2 Using ChatGPT Like a Professional 3 Microsoft 365 Copilot at Work 4 Master Your Inbox with AI 5 AI for Meetings and Productivity 6 AI for Reports and Presentations 7 AI for Data and Decision-Making 8 Automating Everyday Work 9 AI Safety and Responsible Use 10 Preparing for the Future of Work What you will learn Prepare better. Capture decisions. Follow up faster. Smarter agendas Meeting capture Actions and owners AI catch-up Responsible use Episode carousel ← Slide 1 of 10 → Original slide collection The complete episode artwork is maintained in the public AI at Work repository. View source slides Continue learning Follow the structured path and move to the next episode when you are ready. View all episodes ← Episode 4 · Master Your Inbox with AI Episode 6 · AI for Reports and Presentations → Syed Azhan Hassan · Data Analyst · AI & Automation · Educator © 2026 Syed Azhan Hassan"
+    },
+    {
+      "type": "episode",
+      "title": "AI for Reports and Presentations",
+      "series": "AI at Work",
+      "episode": 6,
+      "summary": "From information to influence.",
+      "topics": [
+        "AI for Reports and Presentations From information to influence."
+      ],
+      "url": "ai-work-episode-6.html",
+      "searchText": "AI for Reports and Presentations | AI at Work AH · SYED AZHAN HASSAN Learning Hub ← Back to AI at Work AI at Work · Episode 6 of 10 AI for Reports and Presentations From information to influence. ▣ 10 slides ◷ 5–7 minute read ✓ Free learning series AI at Work Journey 1 Getting Started with AI at Work 2 Using ChatGPT Like a Professional 3 Microsoft 365 Copilot at Work 4 Master Your Inbox with AI 5 AI for Meetings and Productivity 6 AI for Reports and Presentations 7 AI for Data and Decision-Making 8 Automating Everyday Work 9 AI Safety and Responsible Use 10 Preparing for the Future of Work What you will learn From information to influence. Clear report structure Executive insights Presentation outlines One story per slide Responsible review Episode carousel ← Slide 1 of 10 → Original slide collection The complete episode artwork is maintained in the public AI at Work repository. View source slides Continue learning Follow the structured path and move to the next episode when you are ready. View all episodes ← Episode 5 · AI for Meetings and Productivity Episode 7 · AI for Data and Decision-Making → Syed Azhan Hassan · Data Analyst · AI & Automation · Educator © 2026 Syed Azhan Hassan"
+    },
+    {
+      "type": "episode",
+      "title": "AI for Data and Decision-Making",
+      "series": "AI at Work",
+      "episode": 7,
+      "summary": "Find insights. Understand patterns. Make better decisions.",
+      "topics": [
+        "AI for Data and Decision",
+        "Making Find insights. Understand patterns. Make better decisions."
+      ],
+      "url": "ai-work-episode-7.html",
+      "searchText": "AI for Data and Decision-Making | AI at Work AH · SYED AZHAN HASSAN Learning Hub ← Back to AI at Work AI at Work · Episode 7 of 10 AI for Data and Decision-Making Find insights. Understand patterns. Make better decisions. ▣ 10 slides ◷ 5–7 minute read ✓ Free learning series AI at Work Journey 1 Getting Started with AI at Work 2 Using ChatGPT Like a Professional 3 Microsoft 365 Copilot at Work 4 Master Your Inbox with AI 5 AI for Meetings and Productivity 6 AI for Reports and Presentations 7 AI for Data and Decision-Making 8 Automating Everyday Work 9 AI Safety and Responsible Use 10 Preparing for the Future of Work What you will learn Find insights. Understand patterns. Make better decisions. Better questions Trend analysis Root-cause thinking Option comparison Human judgement Episode carousel ← Slide 1 of 10 → Original slide collection The complete episode artwork is maintained in the public AI at Work repository. View source slides Continue learning Follow the structured path and move to the next episode when you are ready. View all episodes ← Episode 6 · AI for Reports and Presentations Episode 8 · Automating Everyday Work → Syed Azhan Hassan · Data Analyst · AI & Automation · Educator © 2026 Syed Azhan Hassan"
+    },
+    {
+      "type": "episode",
+      "title": "Automating Everyday Work",
+      "series": "AI at Work",
+      "episode": 8,
+      "summary": "Reduce repetition. Improve consistency. Save time.",
+      "topics": [
+        "Automating Everyday Work Reduce repetition. Improve consistency. Save time."
+      ],
+      "url": "ai-work-episode-8.html",
+      "searchText": "Automating Everyday Work | AI at Work AH · SYED AZHAN HASSAN Learning Hub ← Back to AI at Work AI at Work · Episode 8 of 10 Automating Everyday Work Reduce repetition. Improve consistency. Save time. ▣ 10 slides ◷ 5–7 minute read ✓ Free learning series AI at Work Journey 1 Getting Started with AI at Work 2 Using ChatGPT Like a Professional 3 Microsoft 365 Copilot at Work 4 Master Your Inbox with AI 5 AI for Meetings and Productivity 6 AI for Reports and Presentations 7 AI for Data and Decision-Making 8 Automating Everyday Work 9 AI Safety and Responsible Use 10 Preparing for the Future of Work What you will learn Reduce repetition. Improve consistency. Save time. Find repetitive tasks Simple workflows Inbox automation Connected tools Human in the loop Episode carousel ← Slide 1 of 10 → Original slide collection The complete episode artwork is maintained in the public AI at Work repository. View source slides Continue learning Follow the structured path and move to the next episode when you are ready. View all episodes ← Episode 7 · AI for Data and Decision-Making Episode 9 · AI Safety and Responsible Use → Syed Azhan Hassan · Data Analyst · AI & Automation · Educator © 2026 Syed Azhan Hassan"
+    },
+    {
+      "type": "episode",
+      "title": "AI Safety and Responsible Use",
+      "series": "AI at Work",
+      "episode": 9,
+      "summary": "Protect data. Reduce risk. Build trust.",
+      "topics": [
+        "AI Safety and Responsible Use Protect data. Reduce risk. Build trust."
+      ],
+      "url": "ai-work-episode-9.html",
+      "searchText": "AI Safety and Responsible Use | AI at Work AH · SYED AZHAN HASSAN Learning Hub ← Back to AI at Work AI at Work · Episode 9 of 10 AI Safety and Responsible Use Protect data. Reduce risk. Build trust. ▣ 10 slides ◷ 5–7 minute read ✓ Free learning series AI at Work Journey 1 Getting Started with AI at Work 2 Using ChatGPT Like a Professional 3 Microsoft 365 Copilot at Work 4 Master Your Inbox with AI 5 AI for Meetings and Productivity 6 AI for Reports and Presentations 7 AI for Data and Decision-Making 8 Automating Everyday Work 9 AI Safety and Responsible Use 10 Preparing for the Future of Work What you will learn Protect data. Reduce risk. Build trust. Privacy Accuracy Fairness Transparency Accountability Episode carousel ← Slide 1 of 10 → Original slide collection The complete episode artwork is maintained in the public AI at Work repository. View source slides Continue learning Follow the structured path and move to the next episode when you are ready. View all episodes ← Episode 8 · Automating Everyday Work Episode 10 · Preparing for the Future of Work → Syed Azhan Hassan · Data Analyst · AI & Automation · Educator © 2026 Syed Azhan Hassan"
+    },
+    {
+      "type": "episode",
+      "title": "Preparing for the Future of Work",
+      "series": "AI at Work",
+      "episode": 10,
+      "summary": "Learn. Adapt. Lead with AI.",
+      "topics": [
+        "Preparing for the Future of Work Learn. Adapt. Lead with AI."
+      ],
+      "url": "ai-work-episode-10.html",
+      "searchText": "Preparing for the Future of Work | AI at Work AH · SYED AZHAN HASSAN Learning Hub ← Back to AI at Work AI at Work · Episode 10 of 10 Preparing for the Future of Work Learn. Adapt. Lead with AI. ▣ 10 slides ◷ 5–7 minute read ✓ Free learning series AI at Work Journey 1 Getting Started with AI at Work 2 Using ChatGPT Like a Professional 3 Microsoft 365 Copilot at Work 4 Master Your Inbox with AI 5 AI for Meetings and Productivity 6 AI for Reports and Presentations 7 AI for Data and Decision-Making 8 Automating Everyday Work 9 AI Safety and Responsible Use 10 Preparing for the Future of Work What you will learn Learn. Adapt. Lead with AI. Human + AI Future-ready skills Continuous learning Responsible leadership 30-day action plan Episode carousel ← Slide 1 of 10 → Original slide collection The complete episode artwork is maintained in the public AI at Work repository. View source slides Continue learning Follow the structured path and move to the next episode when you are ready. View all episodes ← Episode 9 · AI Safety and Responsible Use Series complete ✓ Syed Azhan Hassan · Data Analyst · AI & Automation · Educator © 2026 Syed Azhan Hassan"
+    },
+    {
+      "type": "episode",
+      "title": "What Is an AI Agent?",
+      "series": "AI Agent Builder",
+      "episode": 1,
+      "summary": "Understand how AI agents move beyond answering questions to completing real tasks.",
+      "topics": [],
+      "url": "agent-builder-episode-1.html",
+      "searchText": "What Is an AI Agent? | AI Agent Builder AH · SYED AZHAN HASSAN Learning Hub ← Back to AI Agent Builder AI Agent Builder · Episode 1 of 10 What Is an AI Agent? Understand how AI agents move beyond answering questions to completing real tasks. ▣ 10 slides ◷ 5–7 minute read ✓ Free learning series Learning Journey 1 What Is an AI Agent? 2 The Microsoft Copilot Ecosystem 3 Build Your First AI Agent 4 Write Effective Agent Instructions 5 Add Knowledge to Your Agent 6 Design Topics & Conversations 7 Give Your Agent Tools & Actions 8 Deploy & Monitor Your AI Agent 9 Responsible AI, Security & Governance 10 Real Business Solutions & the Future of AI Agents What you will learn Understand how AI agents move beyond answering questions to completing real tasks. AI agent fundamentals Agents vs chatbots Reasoning and decisions Tools and actions Business use cases Human oversight Episode carousel ← Slide 1 of 10 → Original slide collection The complete episode artwork is maintained in the public AI Agent Builder repository. View source slides Continue learning Follow the structured path and move to the next episode when you are ready. View all episodes ← Beginning of series Episode 2 · The Microsoft Copilot Ecosystem → Syed Azhan Hassan · Data Analyst · AI & Automation · Educator © 2026 Syed Azhan Hassan"
+    },
+    {
+      "type": "episode",
+      "title": "The Microsoft Copilot Ecosystem",
+      "series": "AI Agent Builder",
+      "episode": 2,
+      "summary": "Understand the Microsoft Copilot products, how they work together, and how to choose the right one.",
+      "topics": [
+        "The Microsoft Copilot Ecosystem Understand the Microsoft Copilot products",
+        "how they work together",
+        "and how to choose the right one."
+      ],
+      "url": "agent-builder-episode-2.html",
+      "searchText": "The Microsoft Copilot Ecosystem | AI Agent Builder AH · SYED AZHAN HASSAN Learning Hub ← Back to AI Agent Builder AI Agent Builder · Episode 2 of 10 The Microsoft Copilot Ecosystem Understand the Microsoft Copilot products, how they work together, and how to choose the right one. ▣ 10 slides ◷ 5–7 minute read ✓ Free learning series Learning Journey 1 What Is an AI Agent? 2 The Microsoft Copilot Ecosystem 3 Build Your First AI Agent 4 Write Effective Agent Instructions 5 Add Knowledge to Your Agent 6 Design Topics & Conversations 7 Give Your Agent Tools & Actions 8 Deploy & Monitor Your AI Agent 9 Responsible AI, Security & Governance 10 Real Business Solutions & the Future of AI Agents What you will learn Understand the Microsoft Copilot products, how they work together, and how to choose the right one. Microsoft Copilot Copilot Chat Copilot Studio Microsoft 365 Copilot Power Platform Choosing the right tool Episode carousel ← Slide 1 of 10 → Original slide collection The complete episode artwork is maintained in the public AI Agent Builder repository. View source slides Continue learning Follow the structured path and move to the next episode when you are ready. View all episodes ← Episode 1 · What Is an AI Agent? Episode 3 · Build Your First AI Agent → Syed Azhan Hassan · Data Analyst · AI & Automation · Educator © 2026 Syed Azhan Hassan"
+    },
+    {
+      "type": "episode",
+      "title": "Build Your First AI Agent",
+      "series": "AI Agent Builder",
+      "episode": 3,
+      "summary": "Follow a practical, step-by-step guide to building your first agent in Microsoft Copilot Studio.",
+      "topics": [
+        "Build Your First AI Agent Follow a practical",
+        "step",
+        "step guide to building your first agent in Microsoft Copilot Studio."
+      ],
+      "url": "agent-builder-episode-3.html",
+      "searchText": "Build Your First AI Agent | AI Agent Builder AH · SYED AZHAN HASSAN Learning Hub ← Back to AI Agent Builder AI Agent Builder · Episode 3 of 10 Build Your First AI Agent Follow a practical, step-by-step guide to building your first agent in Microsoft Copilot Studio. ▣ 12 slides ◷ 5–7 minute read ✓ Free learning series Learning Journey 1 What Is an AI Agent? 2 The Microsoft Copilot Ecosystem 3 Build Your First AI Agent 4 Write Effective Agent Instructions 5 Add Knowledge to Your Agent 6 Design Topics & Conversations 7 Give Your Agent Tools & Actions 8 Deploy & Monitor Your AI Agent 9 Responsible AI, Security & Governance 10 Real Business Solutions & the Future of AI Agents What you will learn Follow a practical, step-by-step guide to building your first agent in Microsoft Copilot Studio. Agent purpose Copilot Studio setup Knowledge Conversation design Actions Testing and improvement Episode carousel ← Slide 1 of 12 → Original slide collection The complete episode artwork is maintained in the public AI Agent Builder repository. View source slides Continue learning Follow the structured path and move to the next episode when you are ready. View all episodes ← Episode 2 · The Microsoft Copilot Ecosystem Episode 4 · Write Effective Agent Instructions → Syed Azhan Hassan · Data Analyst · AI & Automation · Educator © 2026 Syed Azhan Hassan"
+    },
+    {
+      "type": "episode",
+      "title": "Write Effective Agent Instructions",
+      "series": "AI Agent Builder",
+      "episode": 4,
+      "summary": "Create clear, focused instructions that make your agent more accurate, reliable, and helpful.",
+      "topics": [
+        "Write Effective Agent Instructions Create clear",
+        "focused instructions that make your agent more accurate",
+        "reliable",
+        "and helpful."
+      ],
+      "url": "agent-builder-episode-4.html",
+      "searchText": "Write Effective Agent Instructions | AI Agent Builder AH · SYED AZHAN HASSAN Learning Hub ← Back to AI Agent Builder AI Agent Builder · Episode 4 of 10 Write Effective Agent Instructions Create clear, focused instructions that make your agent more accurate, reliable, and helpful. ▣ 10 slides ◷ 5–7 minute read ✓ Free learning series Learning Journey 1 What Is an AI Agent? 2 The Microsoft Copilot Ecosystem 3 Build Your First AI Agent 4 Write Effective Agent Instructions 5 Add Knowledge to Your Agent 6 Design Topics & Conversations 7 Give Your Agent Tools & Actions 8 Deploy & Monitor Your AI Agent 9 Responsible AI, Security & Governance 10 Real Business Solutions & the Future of AI Agents What you will learn Create clear, focused instructions that make your agent more accurate, reliable, and helpful. Role and goal Audience Guidelines Examples Fallbacks Instruction quality Episode carousel ← Slide 1 of 10 → Original slide collection The complete episode artwork is maintained in the public AI Agent Builder repository. View source slides Continue learning Follow the structured path and move to the next episode when you are ready. View all episodes ← Episode 3 · Build Your First AI Agent Episode 5 · Add Knowledge to Your Agent → Syed Azhan Hassan · Data Analyst · AI & Automation · Educator © 2026 Syed Azhan Hassan"
+    },
+    {
+      "type": "episode",
+      "title": "Add Knowledge to Your Agent",
+      "series": "AI Agent Builder",
+      "episode": 5,
+      "summary": "Connect trusted knowledge sources so your agent can provide accurate and useful answers.",
+      "topics": [],
+      "url": "agent-builder-episode-5.html",
+      "searchText": "Add Knowledge to Your Agent | AI Agent Builder AH · SYED AZHAN HASSAN Learning Hub ← Back to AI Agent Builder AI Agent Builder · Episode 5 of 10 Add Knowledge to Your Agent Connect trusted knowledge sources so your agent can provide accurate and useful answers. ▣ 10 slides ◷ 5–7 minute read ✓ Free learning series Learning Journey 1 What Is an AI Agent? 2 The Microsoft Copilot Ecosystem 3 Build Your First AI Agent 4 Write Effective Agent Instructions 5 Add Knowledge to Your Agent 6 Design Topics & Conversations 7 Give Your Agent Tools & Actions 8 Deploy & Monitor Your AI Agent 9 Responsible AI, Security & Governance 10 Real Business Solutions & the Future of AI Agents What you will learn Connect trusted knowledge sources so your agent can provide accurate and useful answers. Knowledge sources Files and documents SharePoint Web content Data connections Answer quality Episode carousel ← Slide 1 of 10 → Original slide collection The complete episode artwork is maintained in the public AI Agent Builder repository. View source slides Continue learning Follow the structured path and move to the next episode when you are ready. View all episodes ← Episode 4 · Write Effective Agent Instructions Episode 6 · Design Topics & Conversations → Syed Azhan Hassan · Data Analyst · AI & Automation · Educator © 2026 Syed Azhan Hassan"
+    },
+    {
+      "type": "episode",
+      "title": "Design Topics & Conversations",
+      "series": "AI Agent Builder",
+      "episode": 6,
+      "summary": "Design conversations that understand user intent, collect information, and guide people to outcomes.",
+      "topics": [
+        "Design Topics",
+        "Conversations Design conversations that understand user intent",
+        "collect information",
+        "and guide people to outcomes."
+      ],
+      "url": "agent-builder-episode-6.html",
+      "searchText": "Design Topics & Conversations | AI Agent Builder AH · SYED AZHAN HASSAN Learning Hub ← Back to AI Agent Builder AI Agent Builder · Episode 6 of 10 Design Topics & Conversations Design conversations that understand user intent, collect information, and guide people to outcomes. ▣ 10 slides ◷ 5–7 minute read ✓ Free learning series Learning Journey 1 What Is an AI Agent? 2 The Microsoft Copilot Ecosystem 3 Build Your First AI Agent 4 Write Effective Agent Instructions 5 Add Knowledge to Your Agent 6 Design Topics & Conversations 7 Give Your Agent Tools & Actions 8 Deploy & Monitor Your AI Agent 9 Responsible AI, Security & Governance 10 Real Business Solutions & the Future of AI Agents What you will learn Design conversations that understand user intent, collect information, and guide people to outcomes. Topics Trigger phrases Conversation flow Questions and variables Conditions User experience Episode carousel ← Slide 1 of 10 → Original slide collection The complete episode artwork is maintained in the public AI Agent Builder repository. View source slides Continue learning Follow the structured path and move to the next episode when you are ready. View all episodes ← Episode 5 · Add Knowledge to Your Agent Episode 7 · Give Your Agent Tools & Actions → Syed Azhan Hassan · Data Analyst · AI & Automation · Educator © 2026 Syed Azhan Hassan"
+    },
+    {
+      "type": "episode",
+      "title": "Give Your Agent Tools & Actions",
+      "series": "AI Agent Builder",
+      "episode": 7,
+      "summary": "Connect your agent to Microsoft 365, Power Automate, business systems, and external APIs.",
+      "topics": [
+        "Give Your Agent Tools",
+        "Actions Connect your agent to Microsoft 365",
+        "Power Automate",
+        "business systems",
+        "and external APIs."
+      ],
+      "url": "agent-builder-episode-7.html",
+      "searchText": "Give Your Agent Tools & Actions | AI Agent Builder AH · SYED AZHAN HASSAN Learning Hub ← Back to AI Agent Builder AI Agent Builder · Episode 7 of 10 Give Your Agent Tools & Actions Connect your agent to Microsoft 365, Power Automate, business systems, and external APIs. ▣ 10 slides ◷ 5–7 minute read ✓ Free learning series Learning Journey 1 What Is an AI Agent? 2 The Microsoft Copilot Ecosystem 3 Build Your First AI Agent 4 Write Effective Agent Instructions 5 Add Knowledge to Your Agent 6 Design Topics & Conversations 7 Give Your Agent Tools & Actions 8 Deploy & Monitor Your AI Agent 9 Responsible AI, Security & Governance 10 Real Business Solutions & the Future of AI Agents What you will learn Connect your agent to Microsoft 365, Power Automate, business systems, and external APIs. Tools and actions Microsoft 365 Power Automate Business systems External APIs Automation patterns Episode carousel ← Slide 1 of 10 → Original slide collection The complete episode artwork is maintained in the public AI Agent Builder repository. View source slides Continue learning Follow the structured path and move to the next episode when you are ready. View all episodes ← Episode 6 · Design Topics & Conversations Episode 8 · Deploy & Monitor Your AI Agent → Syed Azhan Hassan · Data Analyst · AI & Automation · Educator © 2026 Syed Azhan Hassan"
+    },
+    {
+      "type": "episode",
+      "title": "Deploy & Monitor Your AI Agent",
+      "series": "AI Agent Builder",
+      "episode": 8,
+      "summary": "Publish confidently, measure performance, learn from feedback, and continuously improve your agent.",
+      "topics": [
+        "Deploy",
+        "Monitor Your AI Agent Publish confidently",
+        "measure performance",
+        "learn from feedback",
+        "and continuously improve your agent."
+      ],
+      "url": "agent-builder-episode-8.html",
+      "searchText": "Deploy & Monitor Your AI Agent | AI Agent Builder AH · SYED AZHAN HASSAN Learning Hub ← Back to AI Agent Builder AI Agent Builder · Episode 8 of 10 Deploy & Monitor Your AI Agent Publish confidently, measure performance, learn from feedback, and continuously improve your agent. ▣ 10 slides ◷ 5–7 minute read ✓ Free learning series Learning Journey 1 What Is an AI Agent? 2 The Microsoft Copilot Ecosystem 3 Build Your First AI Agent 4 Write Effective Agent Instructions 5 Add Knowledge to Your Agent 6 Design Topics & Conversations 7 Give Your Agent Tools & Actions 8 Deploy & Monitor Your AI Agent 9 Responsible AI, Security & Governance 10 Real Business Solutions & the Future of AI Agents What you will learn Publish confidently, measure performance, learn from feedback, and continuously improve your agent. Testing Deployment Users Analytics Monitoring Continuous improvement Episode carousel ← Slide 1 of 10 → Original slide collection The complete episode artwork is maintained in the public AI Agent Builder repository. View source slides Continue learning Follow the structured path and move to the next episode when you are ready. View all episodes ← Episode 7 · Give Your Agent Tools & Actions Episode 9 · Responsible AI, Security & Governance → Syed Azhan Hassan · Data Analyst · AI & Automation · Educator © 2026 Syed Azhan Hassan"
+    },
+    {
+      "type": "episode",
+      "title": "Responsible AI, Security & Governance",
+      "series": "AI Agent Builder",
+      "episode": 9,
+      "summary": "Build strong guardrails around security, governance, trust, accountability, and human oversight.",
+      "topics": [
+        "Responsible AI",
+        "Security",
+        "Governance Build strong guardrails around security",
+        "governance",
+        "trust",
+        "accountability",
+        "and human oversight."
+      ],
+      "url": "agent-builder-episode-9.html",
+      "searchText": "Responsible AI, Security & Governance | AI Agent Builder AH · SYED AZHAN HASSAN Learning Hub ← Back to AI Agent Builder AI Agent Builder · Episode 9 of 10 Responsible AI, Security & Governance Build strong guardrails around security, governance, trust, accountability, and human oversight. ▣ 10 slides ◷ 5–7 minute read ✓ Free learning series Learning Journey 1 What Is an AI Agent? 2 The Microsoft Copilot Ecosystem 3 Build Your First AI Agent 4 Write Effective Agent Instructions 5 Add Knowledge to Your Agent 6 Design Topics & Conversations 7 Give Your Agent Tools & Actions 8 Deploy & Monitor Your AI Agent 9 Responsible AI, Security & Governance 10 Real Business Solutions & the Future of AI Agents What you will learn Build strong guardrails around security, governance, trust, accountability, and human oversight. Responsible AI Security Governance Trust Accountability Human oversight Episode carousel ← Slide 1 of 10 → Original slide collection The complete episode artwork is maintained in the public AI Agent Builder repository. View source slides Continue learning Follow the structured path and move to the next episode when you are ready. View all episodes ← Episode 8 · Deploy & Monitor Your AI Agent Episode 10 · Real Business Solutions & the Future of AI Agents → Syed Azhan Hassan · Data Analyst · AI & Automation · Educator © 2026 Syed Azhan Hassan"
+    },
+    {
+      "type": "episode",
+      "title": "Real Business Solutions & the Future of AI Agents",
+      "series": "AI Agent Builder",
+      "episode": 10,
+      "summary": "Explore how AI agents solve business problems, automate actions, and create measurable impact.",
+      "topics": [
+        "Real Business Solutions",
+        "the Future of AI Agents Explore how AI agents solve business problems",
+        "automate actions",
+        "and create measurable impact."
+      ],
+      "url": "agent-builder-episode-10.html",
+      "searchText": "Real Business Solutions & the Future of AI Agents | AI Agent Builder AH · SYED AZHAN HASSAN Learning Hub ← Back to AI Agent Builder AI Agent Builder · Episode 10 of 10 Real Business Solutions & the Future of AI Agents Explore how AI agents solve business problems, automate actions, and create measurable impact. ▣ 10 slides ◷ 5–7 minute read ✓ Free learning series Learning Journey 1 What Is an AI Agent? 2 The Microsoft Copilot Ecosystem 3 Build Your First AI Agent 4 Write Effective Agent Instructions 5 Add Knowledge to Your Agent 6 Design Topics & Conversations 7 Give Your Agent Tools & Actions 8 Deploy & Monitor Your AI Agent 9 Responsible AI, Security & Governance 10 Real Business Solutions & the Future of AI Agents What you will learn Explore how AI agents solve business problems, automate actions, and create measurable impact. Business problems Agent solutions Workflow automation Measurable impact Adoption Future of agents Episode carousel ← Slide 1 of 10 → Original slide collection The complete episode artwork is maintained in the public AI Agent Builder repository. View source slides Continue learning Follow the structured path and move to the next episode when you are ready. View all episodes ← Episode 9 · Responsible AI, Security & Governance End of series → Syed Azhan Hassan · Data Analyst · AI & Automation · Educator © 2026 Syed Azhan Hassan"
+    }
+  ]
+}
