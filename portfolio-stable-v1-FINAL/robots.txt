@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://syedazhan.netlify.app/sitemap.xml
